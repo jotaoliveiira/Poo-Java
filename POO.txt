@@ -35,3 +35,56 @@ TODA CLASSE É ESCRITA COM A PRIMEIRA LETRA MAIÚSCULA. PascalCase, pra criar ar
 EX: MeuCachorro
 camelCase: diz que toda palvra começa c letra minúscula e a partir da primeira palavra, toda a primeira letra é maiúscula. Igual o Padrão que estou escrevendo no VScode
 Pra escrever métodos, atributo, get, set, var TUDO EM CAMELCASE
+
+
+
+
+
+
+------------------------------------------------------------------------------- AULA 5------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------
+TIPOS DE DADOS EM JAVA
+JAVA tem varios tipos de dados, e tem tipos de dados primitivos que todo o desenvolvedor precisa saber
+
+byte = tipo de dado que recebe somente byte. Menor byte que pode receber
+é -128 e o maior é 127
+
+Short menor -32768 e maior é 32767
+
+Integer é pra trabalhar com tipos inteiros. Maior é 2147483647 e o menor -2147483648
+
+Long, valores MUITO grandes e ñ vou escreverr aqui.É basicamente um inteiro (integer) gigante. Long 92337203684775807. Precisa colocar um L no final
+
+Float pra valores flutuantes  precisa colocar o F no final
+
+double é um float mais preciso
+
+Temos o String, que é comum PRA TODOS. Armazena texto.
+char: Também é texto, mas textos pequenos. Usados pra gguardar carácter. Não colocamos entre aspas duplas
+Boolean: Dado lógico, pode ser true ou false
+
+
+
+				Exemplos no VS
+	byte tipoByte = 127;
+        Short tipoShort = 32767;
+        Integer tipoInteger = Integer.MAX_VALUE;
+        Long tipoLong = 92337203684775807L;
+        Float tipoFloat = 2.8F;
+        Double tipoDouble = 4.89;
+        char tipoChar = 'S';
+        Boolean tipoBOlean = false;
+
+
+
+
+-----------------------------------AULA 06------------------------------
+
+
+
+Deletamos tudo e criamos novas pastas.
+Toda pasta em Java se transforrma em package
+Tomar cuidado pq todo número inteiro "INTEGER" ñ aceita número à esquerrda. 001 em Integer fica 1
+Constante é algo que nunca muda. TOda constante é com letra maiúscula e separado por underline
+AQUI TAMBEM TEM IF
+throw pra lançar uma exceção dps do if
+
