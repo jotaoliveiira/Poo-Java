@@ -88,3 +88,53 @@ Constante é algo que nunca muda. TOda constante é com letra maiúscula e separ
 AQUI TAMBEM TEM IF
 throw pra lançar uma exceção dps do if
 
+
+
+
+
+--------------------------------AULA 07 -------------------------
+
+
+Se for ver, tem dois métodos. Sacar e transferir. O sacar está assim:
+ public Double sacar (Double valor){
+    
+    if (valor > this.saldo) {
+        throw new InputMismatchException("O saldo é insfuciente");    
+    }
+    
+    this.saldo -= valor;
+
+Concorda que pra transferir vai ser a mesma coisa? Então, eu coloquei a seguinte linha
+this.sacar (valor);
+E pra depositar? pq o "Dinheiro" Saiu da conta. O seguinte código
+ contaDestino.depositar(valor);
+Criei uma nova pasta. ContaCorrente
+Quero que tudo o que tenha em ContaBancaria tenha em conta corrente, como fazer?
+
+
+public class ContaCorrente extends ContaBancaria essa é a linha, MAS, o que herda precisa de um construtor também
+Só clicar e apertar CTRL ponto e criar o construtor
+O super, que aparece, significa que está passando os métodos pro pai dele
+
+
+
+
+-------------------------------------AULA 08---------------------------------
+
+
+
+public abstract class ContaBancaria
+Esse abstract é pra classe não ser instanciada
+A classe "ContaBancaria" Vai servir apenas como modelo pras outras classes
+
+New Date = pra colocar dia e hora do comptuador
+
+
+Converter data
+10/08/2025 15:53hrs
+Ficaria assim
+SimpleDateFormat formatador = new SimpleDateFormat("DD/MM/YYY HH:mm");
+
+
+
+
