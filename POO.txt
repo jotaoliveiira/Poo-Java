@@ -1,3 +1,40 @@
 ------------------------------------- AULA 04 ------------------------------------------------------
 
 
+Metodos acessoers
+Public = Indica que qualquer um pode acessar o elemento
+Private = Indica que somente a classe pode acessar
+Protected = Indica que somente a classe e seus filhos podem acessar
+Default = Indica que somente a classe, seus filhos e as classes no mesmo packege podem acessar
+
+
+
+					GETTERS E SETTERS
+São métodos que a classe disponibliza, pra quem quiser modifcar do lado de forar, poder modificar ou obter informações sobre os atributos, já que em Java, a grande maioria é private
+mas esses métodos podem passar por uma validação internamente dentro da classe.
+Vai ser assim
+	public void setNome
+		this.nome = nome   = Alguém do lado de fora, agora vai poder trocar o nome
+
+"Void signfica que nao vai ter retorno nenhum"
+
+public String getNome
+return this.nome:
+
+
+
+
+					Construtores
+O padrão é
+Public Carro (){} (O nome "Carro é um exemplo")
+Se eu n crio um construtor, o Java cria pra mim
+Mas, posso ter um personalizado
+Public Carro (String modelo, Integer ano, String cor){
+}
+Quando vc cria um construtor, o Padrão nao existe mais
+
+
+
+		Formas de escrever
+PascalCase; NotaFiscal.java  == Nomes de arquivo, classe e construtor dda classe
+camelCase; notaFiscal	== atributos

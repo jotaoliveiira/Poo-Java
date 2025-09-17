@@ -3,18 +3,28 @@ public class App {
         System.out.println("Aprendendo POO com Java");
 
         Pessoa pessoa1 = new Pessoa();
-        pessoa1.nome = "Fulano";
-        pessoa1.idade = 21;
+        pessoa1.setNome("Fulano"); 
+        pessoa1.setIdade(21); 
 
-        System.out.println(pessoa1.nome);
-        System.out.println(pessoa1.idade);
+        System.out.println(pessoa1.getNome());
+        System.out.println(pessoa1.getIdade());
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.nome = "Joao";
-        pessoa2.idade = 13;
+        Carro meuCarro = new Carro();
+        meuCarro.setModelo("Civic");
+        meuCarro.setAno(2020);
+        meuCarro.setCor("Prata");
 
-        System.out.println(pessoa2.nome);
-        System.out.println(pessoa2.idade);
+        System.out.println(meuCarro.getModelo());
+        System.out.println(meuCarro.getAno());
+        System.out.println(meuCarro.getCor());
+
+        Carro novoCarro = new Carro("Fiat Toro", 2023, "Branca");
+        
+        System.out.println(novoCarro.getModelo());
+        System.out.println(novoCarro.getAno());
+        System.out.println(novoCarro.getCor());
+
+            
     }
 
 }
