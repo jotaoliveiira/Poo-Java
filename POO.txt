@@ -38,3 +38,27 @@ Quando vc cria um construtor, o Padrão nao existe mais
 		Formas de escrever
 PascalCase; NotaFiscal.java  == Nomes de arquivo, classe e construtor dda classe
 camelCase; notaFiscal	== atributos
+
+
+
+
+
+
+------------------------------- AULA 05 ---------------------------------
+Tipos de dados
+				PRRIMITIVOS
+Se eu criar uma variavel/ objeto, eu preciso criar de algum tipo. E temos tipos primitivos.
+
+byte = é um tipo de byte ue recebe só byte. menor byte -128 e maior 127
+Short = Campo de números pequenos, menor é -32768 e maior 32768
+Integer = tipos inteiros, ver no VScode os menores e maiores números daqq pra frente.
+Long = são valorers muitos grandes. Precisa de um L no final
+Float = Pra valores flutuantes (elevados) Precisa colocar um F
+Double = Tipo float, mas pra valores maiores. Double tem uma precisão muito maior
+Long, Double e Integerr são os mais usados.
+
+Existe também 
+String = Armazenar textos
+char = Textos muitos pequenos, quando queremos guardar algum caracter, e colocamos entre aspas simples
+Boolean = Tipo de dado verdadeiro ou falso. True or false
+
