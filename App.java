@@ -14,6 +14,7 @@ public class App {
         meuCarro.setAno(2020);
         meuCarro.setCor("Prata");
 
+        /* 
         System.out.println(meuCarro.getModelo());
         System.out.println(meuCarro.getAno());
         System.out.println(meuCarro.getCor());
@@ -23,7 +24,7 @@ public class App {
         System.out.println(novoCarro.getModelo());
         System.out.println(novoCarro.getAno());
         System.out.println(novoCarro.getCor());
-
+*/
             
     }
 
