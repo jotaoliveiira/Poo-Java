@@ -62,3 +62,44 @@ String = Armazenar textos
 char = Textos muitos pequenos, quando queremos guardar algum caracter, e colocamos entre aspas simples
 Boolean = Tipo de dado verdadeiro ou falso. True or false
 
+
+
+
+------------------------------------ AULA 06 ---------------------------------------------------------------------
+
+Criando um Banco Digital
+Colocamos o número da agência como String, porque pode começar com 0 "001" e números inteiros não começam com 0, para nós colocarmos Integer
+Tiramos o Set do Saldo, pq o saldo n é algo que o usuários pode alterar.
+Tiramos o set do construtor
+
+Até a primeira parte, fizemos.
+Atribtuos = passo a passo. O que vai ter dentro da conta bancária
+Construtores = Forma em que ela vai ser construida
+Getters e Setters = métodos de acesso à esses atributos
+Métodos = Recurso dentro de objeto ou classe que transformam ou geram comportamentos.
+
+Criamos um método para depositar
+public void depositar (DOuble valor). Pq o void? pq ele não vai me devolver nada. Só vai executar algo.
+o Double p usa casa decimal, e é mais preciso.
+Mas, tenho que pegar o valor, e somar na minha conta, né?
+Então
+this.saldo = this.saldo + valor
+De uma forma simplificada fica
+this.saldo += valor;
+esse +=, signiffica que o saldo ta recebendo ele mesmo mais o valor
+
+Criamos uma constate. Constante, diferente de variável, é algo que n]ao muda.
+Constante tem que ser escrita com letras maiúsculas, e se for separar, tem que ser separada por underline
+
+Usamos uma exceção. Quando trabalhamos com validações que não são atendidas, usamos uma excecção. Vale lembrar que usamos if, obviamente.
+
+Fizemos de sacar tb. Então
+Depositar vai verificar se o valor de depósito é menor que o valor minimo. Se for, nao pode acontecer depósito. Se nao, efetua o depósito somando o valor ao saldo.
+Sacar verifica se o valor é maior que o saldo da conta. Se for, manda mensgaem de saldo insuficiente. Se nao, remove o valor de saque do saldo atual e retorna o valor sacado ao usuário.
+
+
+
+
+
+
+
