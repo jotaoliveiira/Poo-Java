@@ -99,7 +99,21 @@ Sacar verifica se o valor é maior que o saldo da conta. Se for, manda mensgaem 
 
 
 
+------------------------------------ Aula 07 -----------------------------------------------------
+
+Vamos fazer uma transferência.
+Se vc for ver, eu coloquei no código para efetuar um saque na conta atual  
+this.sacar(valor); 
+
+Na outra linha ficou  para efetuar o deposito na conta destino
+ contaDestino.depositar(valor);
+
+Vamos criar outras conta (Corrente, poupança) Com o conceito de herança
+Criei uma conta corrente e quero que tudo que tenha na Conta Bancaria tenha nela tb. 
 
 
 
-
+public class ContaCorrente extends ContaBancaria
+Mas, vai dar um erro, pq precisa de um construtor. É só dar um Ctrl ponto e add o construtor
+Se vc ver, ele chama o método super. Que ele ta passando os valores pro pai dele, que seria o ContaBancaria.
+Então por baixo ele cria uma Conta Bancaria

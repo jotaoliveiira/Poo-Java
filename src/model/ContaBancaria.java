@@ -80,6 +80,11 @@ public Double sacar (Double valor){
     return valor;
 }
 
+public void transferir (Double valor, ContaBancaria contaDestino){
+    this.sacar(valor);
+
+    contaDestino.depositar(valor);
+}
 
    //#endregion
 
