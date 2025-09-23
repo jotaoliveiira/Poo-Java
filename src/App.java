@@ -1,8 +1,10 @@
 package src;
 
 
+import src.model.ContaBancaria;
 import src.model.ContaCorrente;
 import src.model.ContaPoupanca;
+import src.utils.DataUtil;
 
 public class App {
     public static void main(String[] args) {
@@ -26,5 +28,14 @@ public class App {
          System.out.println();
          System.out.println("Saldo conta destino de R$" + conta2.getSaldo());
          System.out.println("Saldo conta atual de R$" + conta.getSaldo());
+         System.out.println();
+         System.out.println(conta2.getDataAbertura());
+       
+       String f1 = DataUtil.converterDateParaDataEHora(conta2.getDataAbertura());
+        String f2 = DataUtil.converterDateParaData(conta2.getDataAbertura());
+         String f3 = DataUtil.converterDateParHora(conta2.getDataAbertura());
+        System.out.println(f1);
+        System.out.println(f2);
+        System.out.println(f3);
     }
 }

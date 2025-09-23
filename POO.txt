@@ -117,3 +117,24 @@ public class ContaCorrente extends ContaBancaria
 Mas, vai dar um erro, pq precisa de um construtor. É só dar um Ctrl ponto e add o construtor
 Se vc ver, ele chama o método super. Que ele ta passando os valores pro pai dele, que seria o ContaBancaria.
 Então por baixo ele cria uma Conta Bancaria
+
+
+------------------------------- AULA 08 ---------------------------------
+
+
+No banco, quando criamos uma conta, precisamos de um tipo.
+Então, eu quero bloquear pra ngm conseguir instanciar uma classe que foi criada como herança
+Vou deixar a classe de um jeito em que as demais nao consigam instanciar.
+A Conta Bancaria vai ser um modelo para as outras, vai ser abstrata.
+Pra isso, temos o conceito de "Abstract" qque é uma classe que serve somente para fazer uma abstração, ñ é um objeto completo, mas serve como referência para que alguém use essa classe como herança para obter os dados dela e n pode ser instanciada
+Dps, Criamos um método prar crriar a data de abertura da conta
+
+Para colocar datas no formato brasileiro.
+Vamos usar o SimpleDateFormat
+
+dd/MM/YYY  HH:mm
+
+Recurso Static, não obriga vc instanciar o objeto. Quando eu tenho algo que deva funcionar de forma estática eu devo usar ele
+Métodos estáticos nao armazenam valorr. Só fazem conversão ou executam algo.
+
+
