@@ -4,6 +4,7 @@ package src;
 import src.model.ContaBancaria;
 import src.model.ContaCorrente;
 import src.model.ContaPoupanca;
+import src.model.Movimentacao;
 import src.utils.DataUtil;
 
 public class App {
@@ -37,5 +38,8 @@ public class App {
         System.out.println(f1);
         System.out.println(f2);
         System.out.println(f3);
+
+        Movimentacao movimentacao = new Movimentacao("Saque", 100.0);
+        System.out.println(movimentacao);
     }
 }

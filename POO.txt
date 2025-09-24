@@ -137,4 +137,17 @@ dd/MM/YYY  HH:mm
 Recurso Static, não obriga vc instanciar o objeto. Quando eu tenho algo que deva funcionar de forma estática eu devo usar ele
 Métodos estáticos nao armazenam valorr. Só fazem conversão ou executam algo.
 
+--------------------------------- AULA 09 -----------------------------------------------------------
+Vamos fazer um extrato bancário. Um extrato bancário é composto por movimentações bancárias.
+Ent, preciso ter algo que possa ser a movimentação.
+Precisamos também, ter uma lista de movimentações.
+Tiramos a data do cosntrutor, e transformamos em um new Date(). Com o objetivo de ser captada na hora da movimentação
+
+Qnd fizemos da primeira vez, não mostrou. Só o número do pacote etc.
+Acontece pq qnd eu chamo o println e chamo a classe, ele chama o método toString, que é um método de todo objeto.
+Esse método tenta transformarr o objeto em uma String.
+Ent, é comum a gnt sobreescrever ele na progrramação (substituir o código)
+
+Para sobreescrever, criamos outro método chamado toString também. Mas, em cima, colocamos @Override. Override quer dizer que vc esta sobreescrevendo o métoo aNTIGO
+/n pra quebrrar linha
 
