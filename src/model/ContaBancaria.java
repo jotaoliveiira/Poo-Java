@@ -1,22 +1,26 @@
 package src.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.InputMismatchException;
 
 public abstract class ContaBancaria {
 
     //#region Atributos
-    private String agencia;
+    protected String agencia;
 
-    private String conta;
+    protected String conta;
 
-    private Integer digito;
+    protected Integer digito;
 
-    private Double saldo;
+    protected Double saldo;
 
-    private Double VALOR_MINIMO_DEPOSITO = 10.0;
+    protected Double VALOR_MINIMO_DEPOSITO = 10.0;
 
-    private Date dataAbertura;
+    protected Date dataAbertura;
+
+    protected ArrayList <Movimentacao> movimentacoes;
+
     
 //#endregion
 
@@ -29,6 +33,12 @@ public abstract class ContaBancaria {
         this.saldo = saldoInicial;
         this.dataAbertura = new Date();
 
+        this.movimentacoes = new ArrayList<Movimentacao>();
+
+        Movimentacao movimentacao = new Movimentacao("Abertura de conta", saldoInicial);
+
+        //EStou SALVANDO A MOVIMENTAÇÃO DENTRO DDO ARRAY DE MOVIMENTACOES
+        this.movimentacoes.add(movimentacao);
         
     }
     //#endregion
@@ -62,17 +72,21 @@ public abstract class ContaBancaria {
     }
 
     public Double getSaldo() {
+
         return saldo;
-        //#endregion
-    }
+}
     public Date getDataAbertura() {
         return dataAbertura;
     }
+
+        //#endregion
+    
 
     
 
 
    //#region Metodos
+
 public void depositar(Double valor){
     //this.saldo = this.saldo + valor;
     
@@ -80,14 +94,18 @@ public void depositar(Double valor){
         throw new InputMismatchException("O valor minimo de depósito é R$" + VALOR_MINIMO_DEPOSITO);
     }
     this.saldo += valor;
+    //AQ FAÇO UMA MOVIMENTAÇAO NO EXTRATO
+    Movimentacao movimentacao = new Movimentacao("Depósito", valor);
+    this.movimentacoes.add(movimentacao);
 }
 
 public Double sacar (Double valor){
     if (valor > this.saldo) {
         throw new InputMismatchException("O saldo é insuficiente");
     }
-
     this.saldo -= valor;
+    Movimentacao movimentacao = new Movimentacao("Retirada de valor", valor);
+    this.movimentacoes.add(movimentacao);
     return valor;
 }
 
@@ -98,6 +116,11 @@ public void transferir (Double valor, ContaBancaria contaDestino){
 }
 
    //#endregion
+
+
+    public abstract void imprimirExtrato();
+
+    
 
     }
 

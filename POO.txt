@@ -151,3 +151,52 @@ Ent, é comum a gnt sobreescrever ele na progrramação (substituir o código)
 Para sobreescrever, criamos outro método chamado toString também. Mas, em cima, colocamos @Override. Override quer dizer que vc esta sobreescrevendo o métoo aNTIGO
 /n pra quebrrar linha
 
+
+
+
+
+------------------------------ AULA 10 -------------------------------------------------
+
+Agora que temos as movimentações, precisamos salvá-las em uma lista. Um array, normalmente.
+
+O ArrayList é um objeto genérico que sabe guardar qlqr coisa dentro dele. Eu digo o que eu vou guardar dentro dele com <>
+
+não é pra colocar no construtor, mas tive que fazer
+
+this.movimentacoes = new ArrayList<Movimentacao>();
+Pra nao dar uma exception de nullpointerException
+
+
+
+
+
+Movimentacao movimentacao = new Movimentacao("Abertura de conta", saldoInicial); 
+Isso é a nossa primeira movimentação, de abertura da conta bancaria
+
+
+this.movimentacoes.add(movimentacao);
+Coloca embaixo pra salvarr a movimentação dentro do array de movimentações
+
+Agora, todo lugar, eu vou lançar uma nova movimentação
+
+Se for ver, em depositar eu ffiz dps do if. Pq se o if falhar, eu nao preciso fazer nenhuma movimentação
+Sempre fazer antes do RETURN
+
+Vamos criar uma lógica pra impressão de extrato.
+
+Método abstrato ñ tem implementação. Quem for herdar da classe, vai ter que se virar e implementar esse cara.
+Pra implementar em outro método, CTRL ponto em cima é implementa.
+
+foreach = tipo de for, laço de repeticção executado em cima de um Array. Enquanto algo estiver dentrro de um Array, ele vai tomar uma ação
+
+Quano criar algo como privado, só a conta bancária pode mexer.
+Mas, nosso array movimentaçoes ta privado. E agr? Eu quero q os filhos e ContaBancaria consigam mexer.
+Troca de private pra protected
+o foreach vai ficarr
+for ( tipo nome : Array)
+se le
+pra cada movimentação dentro de .... eu quero fazer..... e aí vai ficar em uum looping enquanto estiver movimentação ali dentro
+
+Metodo abstract obrriga quem está herdando da classe implementar esse método
+
+ou seja, podemos ter classes ou métodos abstratos.

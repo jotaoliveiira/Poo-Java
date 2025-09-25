@@ -39,7 +39,12 @@ public class App {
         System.out.println(f2);
         System.out.println(f3);
 
-        Movimentacao movimentacao = new Movimentacao("Saque", 100.0);
-        System.out.println(movimentacao);
+      
+        //Corrente
+        conta.imprimirExtrato();
+        System.out.println();
+        System.out.println();
+        //Poupança
+        conta2.imprimirExtrato();
     }
 }
